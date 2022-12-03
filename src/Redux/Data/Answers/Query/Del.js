@@ -1,9 +1,10 @@
-import {answerData} from "../Data/answerData";
+import {answerData, Set} from "../Data/answerData";
+import {Contents} from "../../Contents/Contents";
 
 export  const Del = (id) => {
     let _answer = answerData.find(a => a.id = id);
     if(_answer){
-        const index = answerData.indexOf(_answer);
-        answerData.slice(index,1);
+        Set(answerData.filter(a => a.id != id));
+        Contents.Del(_answer.ContentId);
     }
 }

@@ -5,6 +5,6 @@ export const GetCatalogPath = (id) => {
     if (!catalog) {
         return "";
     } else {
-        return GetCatalogPath(catalog.root) + "/" + catalog.name;
+        return GetCatalogPath(catalog.parent) + "/" + catalog.name;
     }
 }

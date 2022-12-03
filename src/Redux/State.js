@@ -5,6 +5,7 @@ import {Links} from "./Data/Links/Links";
 import {Questions} from "./Data/Questions/Questions";
 import {Tags} from "./Data/Tags/Tags";
 import {Answers} from "./Data/Answers/Answers";
+import {Helpers} from "./Helpers/Helpers";
 
 export let state ={
     Articles: Articles,
@@ -13,5 +14,8 @@ export let state ={
     Contents: Contents,
     Links: Links,
     Questions: Questions,
-    Tags: Tags
+    Tags: Tags,
+    helpers: Helpers,
+    openFolders: [],
+    rootCatalog: "root"
 }

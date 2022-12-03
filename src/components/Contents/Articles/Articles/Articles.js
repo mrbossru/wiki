@@ -1,38 +1,14 @@
 import React from "react";
-import style from "./Articles.module.css"
 import {Catalog} from "./Catalog/Catalog";
-import {HeaderBtn} from "../../../Header/HeaderBtn/HeaderBtn";
-import {Route} from "react-router-dom";
-import SampleData from "../../../../Data.json";
-
 
 export const Articles = (props) =>{
-    let data = SampleData;
-    const ChangeData = (treeData, initialOpen) => {
-        data = treeData;
-    }
-
-    const OnSave = (treeData, initialOpen, removeNodes) => {
-    }
-
-    function generateUUID() {
-        let d = new Date().getTime();
-        let d2 = (performance && performance.now && (performance.now()*1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
-        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-            let r = Math.random() * 16;//random number between 0 and 16
-            if(d > 0){//Use timestamp until depleted
-                r = (d + r)%16 | 0;
-                d = Math.floor(d/16);
-            } else {//Use microseconds since page-load if supported
-                r = (d2 + r)%16 | 0;
-                d2 = Math.floor(d2/16);
-            }
-            return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-        });
+    const OnSave = (treeData, initialOpen) => {
+        props.state.openFolders = initialOpen;
+        props.state.Articles.SetArticlesTree(treeData);
     }
     return (
             <div>
-                <Catalog treeData={SampleData} initialOpen={[1]} rootId={0} OnSave={OnSave} GetId={generateUUID}/>
+                <Catalog treeData={props.state.Articles.GetArticlesTree(props.state.rootCatalog)} initialOpen={props.state.openFolders} rootId={props.state.rootCatalog} OnSave={OnSave} GetId={props.state.helpers.generateUUID}/>
             </div>
     )
 }

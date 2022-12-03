@@ -3,3 +3,7 @@ export let contentData = [
     {id:"2", data: "data2"},
     {id:"3", data: "data3"},
 ]
+
+export const Set = (data) => {
+    contentData = data;
+}

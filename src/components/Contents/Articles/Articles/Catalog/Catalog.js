@@ -8,14 +8,13 @@ import {Placeholder} from "./Placeholder/Placeholder";
 
 export class Catalog extends React.Component {
     initialOpen = [];
-    _removeFolder = {"id": "remove","parent": 0,"droppable": true,"text": "Удаленные"};
-    removeNodes=[];
-    _treeData = [];
+    _removeFolder = {};
     constructor(props) {
         super(props);
         this._treeData = this.props.treeData;
         this.state = { treeData: this.props.treeData, enableDnd: false};
         this.initialOpen = this.props.initialOpen? this.props.initialOpen : [];
+        this._removeFolder = {"id": "remove","parent": this.props.rootId,"droppable": true,"text": "Удаленные", data:{ index: 0}};
         window.addEventListener("beforeunload", (ev) => this.props.OnSave(this._treeData, this.initialOpen, this.removeNodes));
     }
     componentWillUnmount() {this.props.OnSave(this._treeData, this.initialOpen, this.removeNodes)}
@@ -26,7 +25,7 @@ export class Catalog extends React.Component {
             if(rNode) {
                 if (rNode.parent != this.props.rootId) return;
             }
-            console.log(newTree);
+            console.log(newTree)
             this.setState({treeData: newTree})
         }
         const handleTextChange = (id, value) => {
@@ -75,7 +74,10 @@ export class Catalog extends React.Component {
                         "id": this.props.GetId(),
                         "parent": this.props.rootId,
                         "droppable": true,
-                        "text": "New"
+                        "text": "New",
+                        "data": {
+                            "index": 0
+                        }
                     }];
                 this.setState({treeData: newTree})
             } else {
@@ -86,7 +88,7 @@ export class Catalog extends React.Component {
             this.setState({enableDnd: !this.state.enableDnd});
         };
         const handleSave = () => {
-            this.props.OnSave(this._treeData, this.initialOpen, this.removeNodes)
+            this.props.OnSave(this.state.treeData, this.initialOpen)
             handleDelete("remove");
             handleClickEditCatalog();
         }
@@ -105,6 +107,9 @@ export class Catalog extends React.Component {
                                 <div className={styles.actionButton}>
                                     <i className="fa fa-close" aria-hidden="true" onClick={handleClickEditCatalog}></i>
                                 </div>
+                                <div className={styles.actionButton}>
+                                    <i className="fa fa-copy" aria-hidden="true" onClick={() => handleNew({droppable: true})}></i>
+                                </div>
                                 <div className={styles.actionButton} onClick={handleSave}>
                                     <i className="fa fa-save" aria-hidden="true"></i>
                                 </div>
@@ -112,7 +117,7 @@ export class Catalog extends React.Component {
                     </div>
                     <Tree
                         tree={this.state.treeData}
-                        rootId={0}
+                        rootId={this.props.rootId}
                         canDrag={() => this.state.enableDnd}
                         onChangeOpen={onChangeOpen}
                         render={(node, {depth, isOpen, onToggle}) => (

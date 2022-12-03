@@ -1,9 +1,8 @@
-import {tagData} from "../Data/tagData";
+import {tagData, Set} from "../Data/tagData";
 
 export  const  Del = (id) => {
     let _tag = tagData.find(a => a.ud == id);
     if(_tag){
-        const index = tagData.indexOf(_tag);
-        tagData.slice(index,1);
+        Set(tagData.filter(a => a.id != id));
     }
 }

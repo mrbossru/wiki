@@ -1,1 +1,2 @@
-T1 : Связать Articles/Catalog ->  Redux/State
+T1: Связать Articles/Catalog ->  Redux/State
+T2: При удалении каталога удалять вложенные
