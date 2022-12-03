@@ -1,100 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8483f470-0989-461f-bcba-bbc5266799a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Answers/Answers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Answers/Data/answerData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Answers/Query/Add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Answers/Query/Del.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Answers/Query/GetAnswer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Articles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Data/articleData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/Add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/CreateNewArticle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/Del.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/GetArticle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/GetArticles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Catalogs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Data/catalogData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/Add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/Del.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalogPath.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalogs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetWorkCatalog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Contents/Contents.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Contents/Data/contentData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/Add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/CreateNewContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/Del.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/GetContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Links/Data/linkData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Links/Links.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Links/Query/Add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Links/Query/Del.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Links/Query/GetLink.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Questions/Data/questionData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/Add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/Del.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/GetQuestion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/GetQuestionRnd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Questions/Questions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Tags/Data/tagData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/Add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/Del.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/GetTag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Tags/Tags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Helpers/generateUUID.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/State.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/ContentEditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/Events.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/Events.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/ScriptLoader.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/ScriptLoader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/TinyMCE.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/TinyMCE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/Utils.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/Utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/components/Editor.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/components/Editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/components/EditorPropTypes.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/components/EditorPropTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Articles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Articles.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Catalog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Catalog.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/CustomDragPreview/CustomDragPreview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/CustomDragPreview/CustomDragPreview.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/CustomNode/CustomNode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/CustomNode/CustomNode.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Placeholder/Placeholder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Placeholder/Placeholder.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/TypeIcon/TypeIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Main/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Main/Main.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Question/Add/AddQuestion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Question/Catalog/Questions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Statistic/Statistic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Contents/Testing/Testing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderBtn/HeaderBtn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderBtn/HeaderBtn.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/helpers/AppendScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="8483f470-0989-461f-bcba-bbc5266799a9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670067997559</updated>
-      <workItem from="1670068000248" duration="2428000" />
+      <workItem from="1670068000248" duration="3186000" />
     </task>
     <servers />
   </component>
