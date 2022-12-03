@@ -1,0 +1,65 @@
+.button {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    color: #fff;
+    border-radius: 0.25em;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.button:hover{
+    background-color: #757575;
+    color: white;
+}
+
+.touch {
+    transition: ease-in-out 0.2s;
+    line-height: 40px;
+    width: 40px;
+    padding: 0px;
+    text-align: center;
+}
+
+.touch.edit:before, .touch.save:before, .touch.new:before, .touch.cancel:before, .touch.delete:before {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.save{
+    position: absolute;
+    right:93px;
+    top: 63px;
+}
+
+.save:before {
+    content: "\f0c7";
+}
+
+.delete{
+    position: absolute;
+    right:53px;
+    top: 63px;
+}
+
+.delete:before{
+    content: "\f1f8";
+}
+
+.edit{
+    position: absolute;
+    right:13px;
+    top: 63px;
+}
+.edit:before{
+    content: "\f044";
+}
+
+.save:before, .delete:before, .edit:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 1rem;
+    padding-right: 12px;
+    background: none;
+    color: #fff;
+}
