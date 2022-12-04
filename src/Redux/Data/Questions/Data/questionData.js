@@ -1,5 +1,5 @@
 export let questionData = [
-    {id: "1", ContentId: "2", vCount: 0, rang: 0}
+    {id: "1", name:"", ContentId: "2", vCount: 0, rang: 0}
 ]
 
 export const Set = (data) => {

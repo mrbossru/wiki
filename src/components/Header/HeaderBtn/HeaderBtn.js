@@ -4,7 +4,7 @@ import style from "./HeaderBtn.module.css";
 import {NavLink} from "react-router-dom";
 
 export const HeaderBtn = (props) => {
-    if (props.save && props.delete()) {
+    if (props.save && props.delete) {
         return (
             <div>
                 <NavLink className={style.button + " " + style.touch + " " + style.save} onClick={props.save}></NavLink>

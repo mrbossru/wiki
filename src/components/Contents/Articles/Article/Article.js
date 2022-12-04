@@ -12,18 +12,18 @@ export  const Article = (props) => {
             <div>Данная статья не найдена</div>
         )
     }
-    const content = props.state.Contents.GetContent(article[0].contentId);
-    if(content.length == 0){
+    const content = props.state.Contents.GetContent(article.contentId);
+    if(!content){
         return(
             <div>Данная статья не найдена</div>
         )
     }
     return(
         <div>
-            <HeaderBtn editlnk={"/article/edit/" + article[0].contentId}/>
-            <h3 className={style.header}>{article[0].name}</h3>
+            <HeaderBtn editlnk={"/article/edit/" + article.id}/>
+            <h3 className={style.header}>{article.name}</h3>
             <div className={style.content}>
-                {content[0].data}
+                {content.data}
             </div>
         </div>
     )
