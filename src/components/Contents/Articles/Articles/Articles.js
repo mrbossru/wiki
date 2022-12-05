@@ -3,6 +3,7 @@ import {Catalog} from "./Catalog/Catalog";
 
 export const Articles = (props) =>{
     const OnSave = (treeData, initialOpen) => {
+        console.log("save");
         props.state.openFolders = initialOpen;
         props.state.Articles.SetArticlesTree(treeData);
     }
