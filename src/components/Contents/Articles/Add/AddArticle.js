@@ -8,7 +8,6 @@ export const AddArticle = (props) => {
     {
         const params = useParams();
         const [redirect, setRedirect] = useState(false);
-
         let content, article;
         let tags =[];
 
@@ -16,6 +15,7 @@ export const AddArticle = (props) => {
         if (params.id) {
             _article = props.state.Articles.GetArticle(params.id);
         }
+
         if (_article) {
             if(redirect) {
                 return (<Navigate to={"/article/" + params.id} replace={true} />);
@@ -77,6 +77,9 @@ export const AddArticle = (props) => {
             props.state.Articles.Del(article.id);
             setRedirect(true);
         }
+        let handlerAddQuestion = () => {
+
+        }
         return (
             <div>
                 <HeaderBtn save={HandlerSave} delete={handlerDelete}/>
@@ -91,12 +94,25 @@ export const AddArticle = (props) => {
                 </div>
                 <div className={style.ContentEditor}>
                     <ContentEditor content={content.data} update={Update}/>
-                    <input type="text" id="tag" name="name" className={style.tagsInput}/>
+                    <input type="text" id="tag" name="name" className={style.select}/>
                     <button className={style.tagsInput} onClick={handlerOnAddTag}>Добавить</button>
                     <button className={style.tagsInput} onClick={handlerClearTags}>Очистить</button>
                     <fieldset className={style.tags}>
                         <legend>Tags</legend>
                             <div id="tags">{tagsStr}</div>
+                    </fieldset>
+                    <select className={style.select}>
+                        <option>Пункт 1 ылвдаовыдлаоывлоаы воадлыводал лвы дла длыоалыво дыалыв  влыодлвофыдлво довдлыофв ыфвдлол оаыво  ывдлаоыв</option>
+                        <option>Пункт 2</option>
+                    </select>
+                    <button className={style.tagsInput} onClick={handlerAddQuestion}>Добавить</button>
+                    <fieldset className={style.tags}>
+                        <legend>Вопросы</legend>
+                        <div id="tags">
+                            <a href="#">Вопрос 1</a>
+                            <div>Вопрос 2</div>
+                            <div>Вопрос 3</div>
+                        </div>
                     </fieldset>
                 </div>
             </div>

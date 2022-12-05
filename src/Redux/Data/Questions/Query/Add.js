@@ -5,7 +5,8 @@ export  const Add = (question) => {
     if(_question){
         _question.rang = question.rang;
         _question.ContentId = question.ContentId;
-        _question.vCount = _question.vCount;
+        _question.vCount = question.vCount;
+        _question.catalogId = question.catalogId;
     } else {
       questionData.push(question);
     }
