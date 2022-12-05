@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8483f470-0989-461f-bcba-bbc5266799a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/CreateNew.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/CreateNew.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/CreateNew.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Links/Query/CreateNew.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/CreateNew.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/CreateNew.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/GetTags.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Answers/Answers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Answers/Data/answerData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Answers/Query/Add.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Answers/Query/Del.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Answers/Query/GetAnswer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Articles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/CreateNewArticle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/GetArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/GetArticle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Catalogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Catalogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Contents/Contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Contents/Contents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/CreateNewContent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/GetContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/GetContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Links/Data/linkData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Links/Data/linkData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Links/Links.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Links/Links.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Questions/Data/questionData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Questions/Data/questionData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/Del.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/Del.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Questions/Questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Questions/Questions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/Del.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/Del.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Tags/Tags.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Tags/Tags.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/State.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBtn/HeaderBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderBtn/HeaderBtn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,16 +36,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\wiki\wiki-client\src\components\Contents\Articles\Articles" />
@@ -96,6 +62,7 @@
       <updated>1670067997559</updated>
       <workItem from="1670068000248" duration="19453000" />
       <workItem from="1670178159545" duration="5835000" />
+      <workItem from="1670216056765" duration="995000" />
     </task>
     <servers />
   </component>
