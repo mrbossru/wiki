@@ -5,6 +5,7 @@ import {Questions} from "../../Questions/Questions";
 import {Contents} from "../../Contents/Contents";
 
 export const Del = (id) => {
+    console.log("del",id);
     let _article = articleData.find(a => a.id == id);
     if(_article){
         Set(articleData.filter(a => a.id != id));

@@ -8,9 +8,7 @@ export const AddArticle = (props) => {
     {
         const params = useParams();
         const [redirect, setRedirect] = useState(false);
-        if(redirect) {
-            return (<Navigate to={"/article/" + params.id} replace={true} />);
-        }
+
         let content, article;
         let tags =[];
 
@@ -19,8 +17,14 @@ export const AddArticle = (props) => {
             _article = props.state.Articles.GetArticle(params.id);
         }
         if (_article) {
+            if(redirect) {
+                return (<Navigate to={"/article/" + params.id} replace={true} />);
+            }
             article = _article;
         } else {
+            if(redirect) {
+                return (<Navigate to={"/articles/"} replace={true} />);
+            }
             article = props.state.Articles.CreateNew();
         }
         content = props.state.Contents.GetContent(article.contentId);
@@ -31,7 +35,6 @@ export const AddArticle = (props) => {
         function Update(data) {
             content.data = data;
         }
-
         let handlerOnAddTag = () =>{
             let tagsElement = document.getElementById("tags");
             let tagInput = document.getElementById("tag");
@@ -64,7 +67,6 @@ export const AddArticle = (props) => {
             tags=[];
             document.getElementById("tags").textContent = "";
         }
-
         const HandlerSave = () => {
             article.name = document.getElementById("atrtName").value;
             props.state.Articles.Add(article);
@@ -72,7 +74,8 @@ export const AddArticle = (props) => {
             setRedirect(true);
         }
         let handlerDelete = () => {
-            props.Articles.Del(article.id);
+            props.state.Articles.Del(article.id);
+            setRedirect(true);
         }
         return (
             <div>

@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8483f470-0989-461f-bcba-bbc5266799a9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Todo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/CreateNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/CreateNew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/SetArticlesTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/SetArticlesTree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/Add.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/GetTags.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/GetTags.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/Add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/Del.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/Del.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Catalog.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,18 +38,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\mail\\AppData\\Local\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\wiki\wiki-client\src\components\Contents\Articles\Articles" />
