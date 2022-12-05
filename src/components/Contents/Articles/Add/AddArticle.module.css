@@ -77,8 +77,15 @@
   box-sizing: border-box;
 }
 
+.tagsInput {
+  margin-top: 10px;
+}
+
 .tags{
   margin-top: 10px;
+  color: lightgray;
+  border-color: lightgray;
+  border-style: solid;
 }
 
 

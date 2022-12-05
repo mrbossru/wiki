@@ -15,7 +15,6 @@ export const SetArticlesTree = (tree) => {
             if (t.droppable) {
                 Catalogs.Add({id: t.id, name: t.text, parent: t.parent, index: t.data.index});
             } else {
-                console.log("add", t);
                 Articles.Add({
                     id: t.id,
                     catalogId: t.parent,

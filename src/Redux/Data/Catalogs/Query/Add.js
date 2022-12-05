@@ -7,9 +7,7 @@ export  const  Add = (catalog) => {
         catalogData[index].name = catalog.name;
         catalogData[index].parent = catalog.parent;
         catalogData[index].index = catalog.index;
-        console.log(catalogData);
     } else {
-        console.log("add", catalog);
         catalogData.push(catalog);
     }
 }

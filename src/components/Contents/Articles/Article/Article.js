@@ -6,8 +6,7 @@ import {HeaderBtn} from "../../../Header/HeaderBtn/HeaderBtn";
 export  const Article = (props) => {
     const params = useParams();
     const  article = props.state.Articles.GetArticle(params.id);
-
-    if(article.length == 0){
+    if(!article){
         return(
             <div>Данная статья не найдена</div>
         )
@@ -22,8 +21,7 @@ export  const Article = (props) => {
         <div>
             <HeaderBtn editlnk={"/article/edit/" + article.id}/>
             <h3 className={style.header}>{article.name}</h3>
-            <div className={style.content} dangerouslySetInnerHTML={{__html:  content.data}}>
-            </div>
+            <div className={style.content} dangerouslySetInnerHTML={{__html:  content.data}}></div>
         </div>
     )
 }

@@ -2,17 +2,12 @@ import React, {useCallback, useContext, useEffect, useState} from "react";
 import ContentEditor from "../../../ContentEditor/ContentEditor";
 import style from "./AddArticle.module.css";
 import {Navigate, useParams} from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import {HeaderBtn} from "../../../Header/HeaderBtn/HeaderBtn";
-
-
-let Context = 0;
 
 export const AddArticle = (props) => {
     {
         const params = useParams();
         const [redirect, setRedirect] = useState(false);
-        const navigate = useNavigate();
         if(redirect) {
             return (<Navigate to={"/article/" + params.id} replace={true} />);
         }
@@ -31,7 +26,8 @@ export const AddArticle = (props) => {
         content = props.state.Contents.GetContent(article.contentId);
         let catalogPath = props.state.Catalogs.GetCatalogPath(article.catalogId);
         tags = props.state.Tags.GetTags(article.id);
-
+        let tagsStr = "";
+        tags.forEach(t => tagsStr = tagsStr + t.name + ";")
         function Update(data) {
             content.data = data;
         }
@@ -45,7 +41,9 @@ export const AddArticle = (props) => {
                     if (!tags.find(el => el.name == tagInput.value)) {
                         let newTag = props.state.Tags.CreateNew();
                         newTag.name = tagInput.value;
-                        props.state.Links.CreateNew(article.id, newTag.id);
+                        props.state.Tags.Add(newTag);
+                        let newLink = props.state.Links.CreateNew(article.id, newTag.id);
+                        props.state.Links.Add(newLink);
                         tags = [
                             ...tags,
                             newTag
@@ -66,15 +64,11 @@ export const AddArticle = (props) => {
             tags=[];
             document.getElementById("tags").textContent = "";
         }
-        let r = false
 
         const HandlerSave = () => {
             article.name = document.getElementById("atrtName").value;
             props.state.Articles.Add(article);
             props.state.Contents.Add(content);
-            tags.forEach(t =>{
-                props.Tags.Add(t);
-            });
             setRedirect(true);
         }
         let handlerDelete = () => {
@@ -94,16 +88,14 @@ export const AddArticle = (props) => {
                 </div>
                 <div className={style.ContentEditor}>
                     <ContentEditor content={content.data} update={Update}/>
-                    <input type="text" id="tag" name="name" className={style.tags}/>
-                    <button className={style.tags} onClick={handlerOnAddTag}>Добавить</button>
-                    <button className={style.tags} onClick={handlerClearTags}>Очистить</button>
-                    <fieldset>
+                    <input type="text" id="tag" name="name" className={style.tagsInput}/>
+                    <button className={style.tagsInput} onClick={handlerOnAddTag}>Добавить</button>
+                    <button className={style.tagsInput} onClick={handlerClearTags}>Очистить</button>
+                    <fieldset className={style.tags}>
                         <legend>Tags</legend>
-                            <div id="tags"></div>
+                            <div id="tags">{tagsStr}</div>
                     </fieldset>
                 </div>
-
-
             </div>
         )
     }

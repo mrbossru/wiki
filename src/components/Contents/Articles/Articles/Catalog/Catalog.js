@@ -87,7 +87,7 @@ export class Catalog extends React.Component {
             this.setState({enableDnd: !this.state.enableDnd});
         };
         const handleSave = () => {
-            this.props.OnSave(this.state.treeData, this.initialOpen)
+            this.props.OnSave(this.state.treeData, this.initialOpen, this.state.enableDnd);
             handleDelete("remove");
             handleClickEditCatalog();
         }

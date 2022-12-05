@@ -5,7 +5,7 @@ import {Articles} from "../Articles";
 
 export const  CreateNew = () => {
     let newContent = Contents.CreateNew();
-    let newArticle = {id: generateUUID, catalogId: state.rootCatalog, contentId: newContent.id, name: "", index: 0};
+    let newArticle = {id: generateUUID(), catalogId: state.rootCatalog, contentId: newContent.id, name: "NewArticle", index: 0};
     Articles.Add(newArticle);
     return newArticle;
 }

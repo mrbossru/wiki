@@ -113,3 +113,11 @@
 .inlineIcon.delete:before {
     color: #c0392b;
 }
+
+
+.tags {
+    margin-top: 10px;
+    color: lightgray;
+    border-color: lightgray;
+    border-style: solid;
+}
