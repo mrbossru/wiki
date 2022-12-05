@@ -1,7 +1,7 @@
 import React, {useCallback, useContext, useEffect, useState} from "react";
 import ContentEditor from "../../../ContentEditor/ContentEditor";
 import style from "./AddArticle.module.css";
-import {useParams} from "react-router-dom";
+import {Navigate, useParams} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import {HeaderBtn} from "../../../Header/HeaderBtn/HeaderBtn";
 
@@ -14,8 +14,7 @@ export const AddArticle = (props) => {
         const [redirect, setRedirect] = useState(false);
         const navigate = useNavigate();
         if(redirect) {
-            console.log("nav");
-            navigate(("/article/" + params.id), {replace: true});
+            return (<Navigate to={"/article/" + params.id} replace={true} />);
         }
         let content, article;
         let tags =[];

@@ -7,6 +7,8 @@
       <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/SetArticlesTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/SetArticlesTree.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/Add.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Articles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Catalog.js" afterDir="false" />
     </list>
@@ -68,7 +70,7 @@
       <updated>1670067997559</updated>
       <workItem from="1670068000248" duration="19453000" />
       <workItem from="1670178159545" duration="5835000" />
-      <workItem from="1670216056765" duration="4312000" />
+      <workItem from="1670216056765" duration="7709000" />
     </task>
     <servers />
   </component>

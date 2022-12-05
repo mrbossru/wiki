@@ -22,8 +22,7 @@ export  const Article = (props) => {
         <div>
             <HeaderBtn editlnk={"/article/edit/" + article.id}/>
             <h3 className={style.header}>{article.name}</h3>
-            <div className={style.content}>
-                {content.data}
+            <div className={style.content} dangerouslySetInnerHTML={{__html:  content.data}}>
             </div>
         </div>
     )

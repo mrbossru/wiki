@@ -2,10 +2,9 @@ import React from "react";
 import {Catalog} from "./Catalog/Catalog";
 
 export const Articles = (props) =>{
-    const OnSave = (treeData, initialOpen) => {
-        console.log("save");
+    const OnSave = (treeData, initialOpen, isEdit) => {
         props.state.openFolders = initialOpen;
-        props.state.Articles.SetArticlesTree(treeData);
+        if (isEdit) props.state.Articles.SetArticlesTree(treeData);
     }
     return (
             <div>

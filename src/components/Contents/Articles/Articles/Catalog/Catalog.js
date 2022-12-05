@@ -15,9 +15,9 @@ export class Catalog extends React.Component {
         this.state = { treeData: this.props.treeData, enableDnd: false};
         this.initialOpen = this.props.initialOpen? this.props.initialOpen : [];
         this._removeFolder = {"id": "remove","parent": this.props.rootId,"droppable": true,"text": "Удаленные", data:{ index: 0}};
-        window.addEventListener("beforeunload", (ev) => {if (this.state.enableDnd) this.props.OnSave(this.state.treeData, this.initialOpen)});
+        window.addEventListener("beforeunload", (ev) => this.props.OnSave(this.state.treeData, this.initialOpen, this.state.enableDnd));
     }
-    componentWillUnmount() {if (this.state.enableDnd) this.props.OnSave(this.state.treeData, this.initialOpen)}
+    componentWillUnmount() {this.props.OnSave(this.state.treeData, this.initialOpen, this.state.enableDnd)}
 
     render() {
         const handleDrop = (newTree) => {
