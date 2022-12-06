@@ -1,14 +1,17 @@
 import React from "react";
-import {Header} from "./components/Header/Header";
-import {Footer} from "./components/Footer/Footer";
-import {Main} from "./components/Contents/Main/Main";
+
+import {Footer} from "./Views/Footer/Footer";
+import {Main} from "./Views/Pages/Main/Main";
 import {BrowserRouter, Route, Routes, useNavigate} from "react-router-dom";
-import {Articles} from "./components/Contents/Articles/Articles/Articles";
-import {AddArticle} from "./components/Contents/Articles/Add/AddArticle";
-import {Questions} from "./components/Contents/Question/Catalog/Questions";
-import {Testing} from "./components/Contents/Testing/Testing";
-import {Statistic} from "./components/Contents/Statistic/Statistic";
-import {Article} from "./components/Contents/Articles/Article/Article";
+import {Articles} from "./Views/Pages/Articles/Articles/Articles";
+import {AddArticle} from "./Views/Pages/Articles/Add/AddArticle";
+import {Questions} from "./Views/Pages/Questions/Catalog/Questions";
+import {Testing} from "./Views/Pages/Testing/Testing";
+import {Statistic} from "./Views/Pages/Statistic/Statistic";
+import {Article} from "./Views/Pages/Articles/Article/Article";
+import {Header} from "./Views/Header/Header";
+import {StateData} from "./StateData";
+import {AddQuestion} from "./Views/Pages/Questions/Add/AddQuestion";
 
 function App(props) {
     return (
@@ -17,16 +20,16 @@ function App(props) {
                     <div className="content">
                         <Header/>
                             <Routes>
-                                <Route path='/articles' element={<Articles state={props.state}/>}/>
-                                <Route path='/article/:id' element={<Article state={props.state}/>}/>
-                                <Route path='/article/edit/:id' element={<AddArticle state={props.state}/>}/>
-                                <Route path='/articles/add' element={<AddArticle state={props.state}/>}/>
-                                <Route path='/articles/edit' element={<Articles state={props.state}/>}/>
-                                <Route path='/questions' element={<Questions state={props.state}/>}/>
-                                <Route path='/questions/add' element={<AddArticle state={props.state}/>}/>
-                                <Route path='/testing' element={<Testing state={props.state}/>}/>
-                                <Route path='/statistic' element={<Statistic state={props.state}/>}/>
-                                <Route path='*' element={<Main state={props.state}/>}/>
+                                <Route path='/articles' element={<Articles model={props.model} stateData={StateData}/>}/>
+                                <Route path='/article/:id' element={<Article model={props.model} stateData={StateData}/>}/>
+                                <Route path='/article/edit/:id' element={<AddArticle model={props.model} stateData={StateData}/>}/>
+                                <Route path='/articles/add' element={<AddArticle model={props.model} stateData={StateData}/>}/>
+                                <Route path='/articles/edit' element={<Articles model={props.model} stateData={StateData}/>}/>
+                                <Route path='/questions' element={<Questions model={props.model} stateData={StateData}/>}/>
+                                <Route path='/questions/add' element={<AddQuestion model={props.model} stateData={StateData}/>}/>
+                                <Route path='/testing' element={<Testing model={props.model}/>} stateData={StateData}/>
+                                <Route path='/statistic' element={<Statistic model={props.model} stateData={StateData}/>}/>
+                                <Route path='*' element={<Main model={props.model} stateData={StateData}/>}/>
                             </Routes>
                         <Footer/>
                     </div>

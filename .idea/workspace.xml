@@ -1,7 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="8483f470-0989-461f-bcba-bbc5266799a9" name="Changes" comment="" />
+=======
+    <list default="true" id="8483f470-0989-461f-bcba-bbc5266799a9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Models/Data/Articles/Query/CreateNew.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Data/Questions/Query/GetQuestions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StateData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Articles/Add/Presenters/AddTag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Articles/Add/Presenters/ClearTags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Articles/Add/Presenters/Delete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Articles/Add/Presenters/GetArticleData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Articles/Add/Presenters/GetCatalogPath.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Articles/Add/Presenters/Save.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Articles/Add/Presenters/TagsToStr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Articles/Articles/Presenters/GetArticlesTree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Articles/Articles/Presenters/SetArticlesTree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Questions/Add/Presenters/AddTag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Questions/Add/Presenters/ClearTags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Questions/Add/Presenters/Delete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Questions/Add/Presenters/GetArticleData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Questions/Add/Presenters/GetCatalogPath.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Questions/Add/Presenters/Save.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Questions/Add/Presenters/TagsToStr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Questions/Catalog/Presenters/GetQuestionsTree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/Questions/Catalog/Presenters/SetQuestionsTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Articles/Articles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Data/articleData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Articles/Data/articleData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Articles/Query/Add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/CreateNew.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/Del.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Articles/Query/Del.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/GetArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Articles/Query/GetArticle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/GetArticles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Articles/Query/GetArticles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/GetArticlesTree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Articles/Query/SetArticlesTree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Catalogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Catalogs/Catalogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Data/catalogData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Catalogs/Data/catalogData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Catalogs/Query/Add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/CreateNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Catalogs/Query/CreateNew.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/Del.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Catalogs/Query/Del.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Catalogs/Query/GetCatalog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalogPath.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Catalogs/Query/GetCatalogPath.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Catalogs/Query/GetCatalogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Catalogs/Query/GetCatalogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Contents/Contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Contents/Contents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Contents/Data/contentData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Contents/Data/contentData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Contents/Query/Add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/CreateNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Contents/Query/CreateNew.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/Del.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Contents/Query/Del.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Contents/Query/GetContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Contents/Query/GetContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Links/Data/linkData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Links/Data/linkData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Links/Links.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Links/Links.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Links/Query/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Links/Query/Add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Links/Query/CreateNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Links/Query/CreateNew.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Links/Query/Del.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Links/Query/Del.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Links/Query/GetChilds.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Links/Query/GetChilds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Links/Query/GetLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Links/Query/GetLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Questions/Data/questionData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Questions/Data/questionData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Questions/Query/Add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/CreateNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Questions/Query/CreateNew.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/Del.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Questions/Query/Del.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/GetQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Questions/Query/GetQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Questions/Query/GetQuestionRnd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Questions/Query/GetQuestionRnd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Questions/Questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Questions/Questions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Tags/Data/tagData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Tags/Data/tagData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Tags/Query/Add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/CreateNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Tags/Query/CreateNew.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/Del.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Tags/Query/Del.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/GetTag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Tags/Query/GetTag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Tags/Query/GetTags.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Tags/Query/GetTags.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Data/Tags/Tags.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Tags/Tags.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Helpers/Helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Helpers/generateUUID.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/generateUUID.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/ContentEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/ContentEditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/Events.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/Events.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/Events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/Events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/ScriptLoader.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/ScriptLoader.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/ScriptLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/ScriptLoader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/TinyMCE.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/TinyMCE.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/TinyMCE.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/TinyMCE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/Utils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/Utils.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/Utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/components/Editor.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/components/Editor.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/components/Editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/components/Editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/components/EditorPropTypes.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/components/EditorPropTypes.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/components/EditorPropTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/components/EditorPropTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentEditor/tinymce/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/ContentEditor/tinymce/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Articles/Add/AddArticle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Add/AddArticle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Articles/Add/AddArticle.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Articles/Article/Article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Article/Article.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Articles/Article/Article.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Articles/Articles/Articles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Articles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Articles/Articles/Articles.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/Catalog/Catalog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Catalog.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/Catalog/Catalog.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/CustomDragPreview/CustomDragPreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/Catalog/CustomDragPreview/CustomDragPreview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/CustomDragPreview/CustomDragPreview.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/Catalog/CustomDragPreview/CustomDragPreview.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/CustomNode/CustomNode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/Catalog/CustomNode/CustomNode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/CustomNode/CustomNode.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/Catalog/CustomNode/CustomNode.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Placeholder/Placeholder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/Catalog/Placeholder/Placeholder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/Placeholder/Placeholder.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/Catalog/Placeholder/Placeholder.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Articles/Articles/Catalog/TypeIcon/TypeIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Components/Catalog/TypeIcon/TypeIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Main/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Main/Main.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Question/Add/AddQuestion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Questions/Add/AddQuestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Question/Catalog/Questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Questions/Catalog/Questions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Statistic/Statistic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Statistic/Statistic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contents/Testing/Testing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/Testing/Testing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBtn/HeaderBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/HeaderBtn/HeaderBtn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderBtn/HeaderBtn.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/HeaderBtn/HeaderBtn.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/helpers/AppendScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+>>>>>>> 6ffcd8d7ee4c085a4640048796bc1b39b06c47c7
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,17 +152,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Progects/wiki/src/views/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mail\\AppData\\Local\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\wiki\wiki-client\src\components\Contents\Articles\Articles" />
+      <recent name="C:\Progects\wiki\src\Models" />
+      <recent name="C:\Progects\wiki\src\Mocks" />
+      <recent name="C:\Progects\wiki\src\Model\Data\Catalogs\Data" />
+      <recent name="C:\Progects\wiki\src\Model\Data\Articles\Data" />
+      <recent name="C:\Progects\wiki\src\Model" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -57,6 +185,13 @@
       <workItem from="1670068000248" duration="19453000" />
       <workItem from="1670178159545" duration="5835000" />
       <workItem from="1670216056765" duration="11916000" />
+      <workItem from="1670301759089" duration="1091000" />
+      <workItem from="1670302868290" duration="372000" />
+      <workItem from="1670303367899" duration="2002000" />
+      <workItem from="1670308458360" duration="264000" />
+      <workItem from="1670308800185" duration="583000" />
+      <workItem from="1670309463596" duration="11378000" />
+      <workItem from="1670325156735" duration="3488000" />
     </task>
     <servers />
   </component>
