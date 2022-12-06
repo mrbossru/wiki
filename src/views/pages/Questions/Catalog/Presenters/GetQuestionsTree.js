@@ -26,7 +26,7 @@ export const GetQuestionsTree = (model, rootId) => {
                 aContentId: a.aContentId,
                 vCount: a.vCount,
                 rang: a.rang,
-                href: ("questions/"+ a.id),
+                href: ("question/"+ a.id),
             }
         }
         return el

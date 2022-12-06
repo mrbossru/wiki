@@ -12,6 +12,7 @@ import {Article} from "./Views/Pages/Articles/Article/Article";
 import {Header} from "./Views/Header/Header";
 import {StateData} from "./StateData";
 import {AddQuestion} from "./Views/Pages/Questions/Add/AddQuestion";
+import {Question} from "./Views/Pages/Questions/Question/Question";
 
 function App(props) {
     return (
@@ -26,12 +27,14 @@ function App(props) {
                                 <Route path='/articles/add' element={<AddArticle model={props.model} stateData={StateData}/>}/>
                                 <Route path='/articles/edit' element={<Articles model={props.model} stateData={StateData}/>}/>
                                 <Route path='/questions' element={<Questions model={props.model} stateData={StateData}/>}/>
+                                <Route path='/question/:id' element={<Question model={props.model} stateData={StateData}/>}/>
+                                <Route path='/question/edit/:id' element={<AddQuestion model={props.model} stateData={StateData}/>}/>
                                 <Route path='/questions/add' element={<AddQuestion model={props.model} stateData={StateData}/>}/>
                                 <Route path='/testing' element={<Testing model={props.model}/>} stateData={StateData}/>
                                 <Route path='/statistic' element={<Statistic model={props.model} stateData={StateData}/>}/>
                                 <Route path='*' element={<Main model={props.model} stateData={StateData}/>}/>
                             </Routes>
-                        <Footer/>
+                        {/*<Footer/>*/}
                     </div>
             </div>
         </BrowserRouter>
