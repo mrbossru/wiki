@@ -11,6 +11,7 @@ import {Statistic} from "./Views/Pages/Statistic/Statistic";
 import {Article} from "./Views/Pages/Articles/Article/Article";
 import {Header} from "./Views/Header/Header";
 import {StateData} from "./StateData";
+import {AddQuestion} from "./Views/Pages/Questions/Add/AddQuestion";
 
 function App(props) {
     return (
@@ -19,16 +20,16 @@ function App(props) {
                     <div className="content">
                         <Header/>
                             <Routes>
-                                <Route path='/articles' element={<Articles state={props.state} stateData={StateData}/>}/>
-                                <Route path='/article/:id' element={<Article state={props.state} stateData={StateData}/>}/>
-                                <Route path='/article/edit/:id' element={<AddArticle state={props.state} stateData={StateData}/>}/>
-                                <Route path='/articles/add' element={<AddArticle state={props.state} stateData={StateData}/>}/>
-                                <Route path='/articles/edit' element={<Articles state={props.state} stateData={StateData}/>}/>
-                                <Route path='/questions' element={<Questions state={props.state}/>} stateData={StateData}/>
-                                <Route path='/questions/add' element={<AddArticle state={props.state} stateData={StateData}/>}/>
-                                <Route path='/testing' element={<Testing state={props.state}/>} stateData={StateData}/>
-                                <Route path='/statistic' element={<Statistic state={props.state} stateData={StateData}/>}/>
-                                <Route path='*' element={<Main state={props.state} stateData={StateData}/>}/>
+                                <Route path='/articles' element={<Articles model={props.model} stateData={StateData}/>}/>
+                                <Route path='/article/:id' element={<Article model={props.model} stateData={StateData}/>}/>
+                                <Route path='/article/edit/:id' element={<AddArticle model={props.model} stateData={StateData}/>}/>
+                                <Route path='/articles/add' element={<AddArticle model={props.model} stateData={StateData}/>}/>
+                                <Route path='/articles/edit' element={<Articles model={props.model} stateData={StateData}/>}/>
+                                <Route path='/questions' element={<Questions model={props.model} stateData={StateData}/>}/>
+                                <Route path='/questions/add' element={<AddQuestion model={props.model} stateData={StateData}/>}/>
+                                <Route path='/testing' element={<Testing model={props.model}/>} stateData={StateData}/>
+                                <Route path='/statistic' element={<Statistic model={props.model} stateData={StateData}/>}/>
+                                <Route path='*' element={<Main model={props.model} stateData={StateData}/>}/>
                             </Routes>
                         <Footer/>
                     </div>

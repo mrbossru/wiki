@@ -3,104 +3,63 @@ import style from "./AddArticle.module.css";
 import {Navigate, useParams} from "react-router-dom";
 import {HeaderBtn} from "../../../Header/HeaderBtn/HeaderBtn";
 import ContentEditor from "../../../Components/ContentEditor/ContentEditor";
+import {GetArticleData} from "./Presenters/GetArticleData";
+import {AddTag} from "./Presenters/AddTag";
+import {ClearTags} from "./Presenters/ClearTags";
+import {Save} from "./Presenters/Save";
+import {Delete} from "./Presenters/Delete";
+import {TagsToStr} from "./Presenters/TagsToStr";
 
 
 export const AddArticle = (props) => {
     {
         const params = useParams();
         const [redirect, setRedirect] = useState(false);
-        let content, article;
-        let tags =[];
-
-        let _article;
-        if (params.id) {
-            _article = props.state.Articles.GetArticle(params.id);
-        }
-
-        if (_article) {
-            if(redirect) {
-                return (<Navigate to={"/article/" + params.id} replace={true} />);
-            }
-            article = _article;
+        if(props.model.Articles.GetArticle(params.id)){
+            if(redirect) return (<Navigate to={"/article/" + params.id} replace={true} />);
         } else {
-            if(redirect) {
-                return (<Navigate to={"/articles/"} replace={true} />);
-            }
-            article = props.state.Articles.CreateNew();
+            if (redirect) return (<Navigate to={"/articles/"} replace={true} />);
         }
-        content = props.state.Contents.GetContent(article.contentId);
-        let catalogPath = props.state.Catalogs.GetCatalogPath(article.catalogId);
-        tags = props.state.Tags.GetTags(article.id);
-        let tagsStr = "";
-        tags.forEach(t => tagsStr = tagsStr + t.name + ";")
+        let articleData = GetArticleData(props.model, params.id);
         function Update(data) {
-            content.data = data;
+            articleData.content.data = data;
         }
         let handlerOnAddTag = () =>{
-            let tagsElement = document.getElementById("tags");
-            let tagInput = document.getElementById("tag");
-            if (tagsElement) {
-                if(tagInput.value != "")
-                {
-                    if (!tags.find(el => el.name == tagInput.value)) {
-                        let newTag = props.state.Tags.CreateNew();
-                        newTag.name = tagInput.value;
-                        props.state.Tags.Add(newTag);
-                        let newLink = props.state.Links.CreateNew(article.id, newTag.id);
-                        props.state.Links.Add(newLink);
-                        tags = [
-                            ...tags,
-                            newTag
-                        ]
-                        tagsElement.textContent = "";
-                        tags.forEach(t => tagsElement.textContent = tagsElement.textContent + t.name + ";");
-                    }
-                }
-                tagInput.value= "";
-            }
+            AddTag(props.model, articleData)
         }
         let handlerClearTags = () =>{
-            tags.forEach(t => props.state.Tags.Del(t.id));
-            let tagIds = tags.map(t => t.id);
-            props.state.Links.GetChilds(article.id).forEach(l =>{
-                if (tagIds.includes(l.child)) props.state.Links.Del(l.id);
-            })
-            tags=[];
-            document.getElementById("tags").textContent = "";
+            ClearTags(props.model, articleData)
         }
         const HandlerSave = () => {
-            article.name = document.getElementById("atrtName").value;
-            props.state.Articles.Add(article);
-            props.state.Contents.Add(content);
+            articleData.article.name = document.getElementById("atrtName").value;
+            Save(props.model, articleData);
             setRedirect(true);
         }
         let handlerDelete = () => {
-            props.state.Articles.Del(article.id);
+            Delete(props.model, articleData);
             setRedirect(true);
         }
-        let handlerAddQuestion = () => {
-
-        }
+        let handlerAddQuestion = () => {}
         return (
             <div>
                 <HeaderBtn save={HandlerSave} delete={handlerDelete}/>
                 <div>
-                    <input id="atrtName" className={style.input} type="text" defaultValue={article.name} required/>
+                    <input id="atrtName" className={style.input} type="text" defaultValue={articleData.article.name} required/>
                     <div className={style.labelBox}>
                         <label className={style.label}>Название статьи</label>
                     </div>
                 </div>
                 <div>
-                    <label id="catalog" className={style.label}>{"Каталог: " + catalogPath}</label>
+                    <label id="catalog" className={style.label}>{"Каталог: " + props.model.Catalogs.GetCatalogPath(articleData.article.catalogId)}</label>
                 </div>
                 <div className={style.ContentEditor}>
-                    <ContentEditor content={content.data} update={Update}/>
+                    <ContentEditor content={articleData.content.data} update={Update}/>
                     <input type="text" id="tag" name="name" className={style.select}/>
                     <button className={style.tagsInput} onClick={handlerOnAddTag}>Добавить</button>
                     <button className={style.tagsInput} onClick={handlerClearTags}>Очистить</button>
                     <fieldset className={style.tags}>
                         <legend>Tags</legend>
-                            <div id="tags">{tagsStr}</div>
+                            <div id="tags">{TagsToStr(articleData.tags)}</div>
                     </fieldset>
                     <select className={style.select}>
                         <option>Пункт 1 ылвдаовыдлаоывлоаы воадлыводал лвы дла длыоалыво дыалыв  влыодлвофыдлво довдлыофв ыфвдлол оаыво  ывдлаоыв</option>

@@ -1,5 +1,5 @@
 export const StateData = {
     openArticlesFolders: [],
     openQuestionsFolders: [],
-    rootCatalog: "root"
+    rootId: "root"
 }

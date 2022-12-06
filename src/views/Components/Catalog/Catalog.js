@@ -5,6 +5,7 @@ import styles from "./Catalog.module.css";
 import {CustomNode} from "./CustomNode/CustomNode";
 import {CustomDragPreview} from "./CustomDragPreview/CustomDragPreview";
 import {Placeholder} from "./Placeholder/Placeholder";
+import {Helpers} from "../../../Helpers/Helpers";
 
 export class Catalog extends React.Component {
     initialOpen = [];
@@ -70,7 +71,7 @@ export class Catalog extends React.Component {
                 let newTree = [
                     ...this.state.treeData,
                     {
-                        "id": this.props.GetId(),
+                        "id": Helpers.generateUUID(),
                         "parent": this.props.rootId,
                         "droppable": true,
                         "text": "New",
@@ -95,7 +96,7 @@ export class Catalog extends React.Component {
             <DndProvider backend={MultiBackend} options={getBackendOptions()}>
                 <div className={styles.app}>
                     <div className={styles.inputWrapper}>
-                        <div className={styles.title}>Содержание</div>
+                        <div className={styles.title}>{this.props.title}</div>
                         {!this.state.enableDnd && (
                             <div className={styles.actionButton} onClick={handleClickEditCatalog}>
                                 <i className="fa fa-edit" aria-hidden="true"></i>

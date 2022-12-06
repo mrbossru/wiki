@@ -1,0 +1,99 @@
+
+.input:invalid {
+  box-shadow: none;
+}
+
+.label-box {
+  margin-top: 5px;
+  margin-left: 5px;
+  position: relative;
+  width: 80%;
+}
+
+.label-box::before,
+.label-box::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  background-color: #757575;
+  transition-property: width;
+  transition-duration: 0.2s;
+}
+
+.label-box::before {
+  left: 50%;
+}
+
+.label-box::after {
+  right: 50%;
+}
+
+.input {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 80%;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  box-sizing: border-box;
+}
+
+.label {
+  top: 0px;
+  margin-left: 5px;
+  font-size: 16px;
+  color: #757575;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
+.AddCatalogBtn{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.ClearCatalogBtn{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+.ContentEditor{
+  height: 500px;
+}
+
+.inputCatalog {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 200px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  box-sizing: border-box;
+}
+
+.tagsInput {
+  margin-top: 10px;
+}
+
+.tags{
+  margin-top: 10px;
+  color: lightgray;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+.select {
+  width: 400px;
+}
+
+
+
+
+
+

@@ -5,13 +5,13 @@ import {HeaderBtn} from "../../../Header/HeaderBtn/HeaderBtn";
 
 export  const Article = (props) => {
     const params = useParams();
-    const  article = props.state.Articles.GetArticle(params.id);
+    const  article = props.model.Articles.GetArticle(params.id);
     if(!article){
         return(
             <div>Данная статья не найдена</div>
         )
     }
-    const content = props.state.Contents.GetContent(article.contentId);
+    const content = props.model.Contents.GetContent(article.contentId);
     if(!content){
         return(
             <div>Данная статья не найдена</div>
