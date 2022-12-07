@@ -7,10 +7,14 @@ import {Model} from "./Models/Model";
 
 const root = createRoot(document.getElementById('root'));
 
-root.render(
-    <React.StrictMode>
-        <App model={Model}/>
-    </React.StrictMode>
-);
+const RenderApp = (model) => {
+    root.render(
+        <React.StrictMode>
+            <App model={model}/>
+        </React.StrictMode>
+    );
+}
+
+RenderApp(Model);
 
 reportWebVitals();

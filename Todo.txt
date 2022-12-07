@@ -1,1 +1,9 @@
-Релиазовать сохрание в AddArticles
+Заменить все document.GetElement на ref
+Обновление через callback
+
+Store?
+
+debugger;
+
+State.GetA.bind(State) -> привязка к контексту вызова
+

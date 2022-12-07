@@ -13,5 +13,5 @@ export let Model ={
     Links: Links,
     Questions: Questions,
     Tags: Tags,
-    helpers: Helpers
+    Helpers: Helpers
 }

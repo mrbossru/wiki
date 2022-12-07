@@ -15,6 +15,8 @@ export const AddArticle = (props) => {
     {
         const params = useParams();
         const [redirect, setRedirect] = useState(false);
+        let articleName = React.createRef();
+
         if(props.model.Articles.GetArticle(params.id)){
             if(redirect) return (<Navigate to={"/article/" + params.id} replace={true} />);
         } else {
@@ -31,7 +33,7 @@ export const AddArticle = (props) => {
             ClearTags(props.model, articleData)
         }
         const HandlerSave = () => {
-            articleData.article.name = document.getElementById("atrtName").value;
+            articleData.article.name = articleName.current.value;
             Save(props.model, articleData);
             setRedirect(true);
         }
@@ -44,7 +46,7 @@ export const AddArticle = (props) => {
             <div>
                 <HeaderBtn save={HandlerSave} delete={handlerDelete}/>
                 <div>
-                    <input id="atrtName" className={style.input} type="text" defaultValue={articleData.article.name} required/>
+                    <input ref={articleName} className={style.input} type="text" defaultValue={articleData.article.name} required/>
                     <div className={style.labelBox}>
                         <label className={style.label}>Название статьи</label>
                     </div>
@@ -62,7 +64,7 @@ export const AddArticle = (props) => {
                             <div id="tags">{TagsToStr(articleData.tags)}</div>
                     </fieldset>
                     <select className={style.select}>
-                        <option>Пункт 1 ылвдаовыдлаоывлоаы воадлыводал лвы дла длыоалыво дыалыв  влыодлвофыдлво довдлыофв ыфвдлол оаыво  ывдлаоыв</option>
+                        <option>Пункт 1 </option>
                         <option>Пункт 2</option>
                     </select>
                     <button className={style.tagsInput} onClick={handlerAddQuestion}>Добавить</button>

@@ -7,7 +7,7 @@ export const Question = (props) => {
     const params = useParams();
     const  question = props.model.Questions.GetQuestion(params.id);
     if(!question) return(<div>Данный вопрос не найден</div>)
-    const qContent = props.model.Contents.GetContent(question.aContentId);
+    const qContent = props.model.Contents.GetContent(question.qContentId);
     const aContent = props.model.Contents.GetContent(question.aContentId);
     if(!question) return(<div>Данный вопрос не найден</div>)
     return(
