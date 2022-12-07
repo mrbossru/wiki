@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8483f470-0989-461f-bcba-bbc5266799a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Store/Store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stor/State.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stor/Stor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Todo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Data/Contents/Data/contentData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Contents/Data/contentData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Data/Contents/Query/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Contents/Query/Add.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Data/Questions/Data/questionData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Data/Questions/Data/questionData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +78,7 @@
       <workItem from="1670325156735" duration="3488000" />
       <workItem from="1670343862876" duration="5280000" />
       <workItem from="1670396518903" duration="286000" />
-      <workItem from="1670396828455" duration="7532000" />
+      <workItem from="1670396828455" duration="10225000" />
     </task>
     <servers />
   </component>

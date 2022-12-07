@@ -7,3 +7,6 @@ debugger;
 
 State.GetA.bind(State) -> привязка к контексту вызова
 
+https://habr.com/ru/post/498860/
+https://reactjs.net/tutorials/aspnetcore.html
+https://aws.amazon.com/ru/what-is/restful-api/

@@ -4,17 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Model} from "./Models/Model";
+import {Stor} from "./Stor/Stor";
 
 const root = createRoot(document.getElementById('root'));
 
-const RenderApp = (model) => {
+const RenderApp = () => {
     root.render(
         <React.StrictMode>
-            <App model={model}/>
+            <App model={Model}/>
         </React.StrictMode>
     );
 }
 
+Stor.subscribe(RenderApp);
 RenderApp(Model);
-
 reportWebVitals();
